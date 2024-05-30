@@ -1,0 +1,97 @@
+/*/ Hide dropdown content by default /*/
+:root{
+    --primary-color:#06858d;
+    --secondary-color:#dd0a69;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+
+/*Style the dropdown button */
+.dropdown  a {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: var(--primary-color);
+}
+.dropdown  a:hover{
+    text-decoration: underline;
+}
+
+/*Style the dropdown content */
+.dropdown-content li {
+    display: block;
+}
+
+/*Show dropdown content when hovering over parent li */
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+/*Style the dropdown content links */
+.dropdown-content a {
+    display: block;
+    padding: 6px 0;
+    text-decoration: none;
+}
+.dropdown-content a:hover{
+    text-decoration: underline;
+    color:var(--secondary-color) ;
+
+}
+
+/*Change background color of dropdown links on hover */
+.dropdown-content a:hover {
+    text-decoration: underline !important;
+}
+/*Layout*/
+.flex{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.justify-center{
+    justify-content: center;
+}
+
+/*List article*/
+
+.new-articles{
+    padding:0 30px;
+    background: white;
+}
+.new-articles .heading{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+.list-articles .article-item a{
+    display: inline-block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    padding: 8px 0;
+    font-size: 16px;
+    color:var(--primary-color);
+}
+.list-articles .article-item a:hover{
+    color:var(--secondary-color)
+}
+
+/*menu on *mobile/
+
+ */
+.mobile-dropdown-content{
+    padding: 0 12px;
+    margin-left: 12px;
+}
+.mobile-navigation-link {
+    padding:6px 12px;
+    display: inline-block;
+}
